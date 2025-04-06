@@ -1,4 +1,4 @@
-FROM node:20-alpine as builder
+FROM node:22-alpine as builder
 
 WORKDIR /app
 
@@ -17,7 +17,7 @@ COPY . .
 # Build the application
 RUN pnpm build
 
-FROM node:20-alpine as production
+FROM node:22-alpine as production
 
 WORKDIR /app
 

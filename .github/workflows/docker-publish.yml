@@ -10,7 +10,7 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write # Changed from read to write to allow pushing tags
       packages: write
 
     steps:
